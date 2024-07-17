@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f1f2f4;
+}
+h1{
+    text-align: center;
+
+}
+
+.header {
+    background-color: #363131;
+    color: #fff;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.logo {
+    margin-left: 50px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8em;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 500;
+    margin: 0 10px;
+    color: #ffffff; /* Change color as needed */
+}
+
+.logo span {
+    background-image: url("https://images.unsplash.com/photo-1544947950-fa07a98d237f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8OHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-weight: 900;
+}
+
+/* Additional styles added */
+.header .navbar .logo h1 {
+    color: #ffffff; 
+}
+
+.header .navbar .navbar-links a:hover {
+    color: #150651; 
+}
+
+footer {
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #363131;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
