@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+
+{% block content %}
+    <div class="wrapper">
+        <div class="content">
+            {% for book in Books %}
+
+                <div class="card">
+                    <!-- Use the external URL directly for the book image -->
+                    <a href="{% url 'Book_detals' book.pk %}">
+                        <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Book Image" class="card__image">
+                    </a>
+                    <div class="card__content">
+                        <h3 class="card__title">{{ book.title }}</h3>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}
